@@ -1,0 +1,681 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    min-width: 600px;
+    font-family: 'Fira Mono', monospace;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/** Header */
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 54px;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 40px 40px 30px;
+}
+
+.header_wrap {
+    margin-left: 40px;
+}
+
+.header img {
+    max-width: 25%;
+}
+
+.header_title {
+    font-family: 'Oswald';
+    max-width: 240px;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: 0.06em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.text_bold {
+    font-weight: 700;
+}
+
+.header_subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #202020;
+    padding: 8px 12px;
+    background: #FFD653;
+    position: relative;
+}
+
+.header_subtitle::before,
+.header_subtitle::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 34px;
+    background-color: white;
+    bottom: 0px;
+}
+
+
+.header_subtitle::before {
+    left: -16px;
+}
+
+.header_subtitle::after {
+    right: -16px;
+}
+
+.line {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 33px;
+    left: 0;
+    top: 141px;
+    z-index: -1;
+}
+
+.yellow_line {
+    background: #FFD653;
+    display: block;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*! Sidebar */
+/* Navigation */
+.sidebar {
+    margin: 0 20px 0 40px;
+}
+
+.navigation {
+    margin-bottom: 24px;
+}
+
+.list {
+    margin: 0 0 6px 0;
+    position: relative;
+}
+
+.list_1:before {
+    content: "";
+    display: block;
+    background: url("/images/Vector.svg") 0 0 no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+.list_2:before {
+    content: "";
+    display: block;
+    background: url("/images/mail.svg") 0 0 no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+.list_3:before {
+    content: "";
+    display: block;
+    background: url("/images/fox.svg") 0 0 no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+.list_4:before {
+    content: "";
+    display: block;
+    background: url("/images/linkedin.svg") 0 0 no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    color: #202020;
+    padding: 0 0 0 20px;
+}
+
+/*? Progress-bar */
+.skills_block {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.skills_title {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 0.08em;
+    top: 0;
+    left: 0;
+}
+
+.skills_bar {
+    background: #fff;
+    position: relative;
+    margin-left: 25px;
+}
+
+.skills_bar:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 170px;
+    background: #ffd653;
+    position: absolute;
+    top: 0;
+    left: -10px;
+}
+
+.bar {
+    margin: 10px 0;
+}
+
+.info span {
+    font-size: 8px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    color: #202020
+}
+
+.progress_line {
+    position: relative;
+    height: 2px;
+    width: 100%;
+    max-width: 140px;
+    background: #FFD653;
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
+        0px 1px rgba(255, 255, 255, 0.8);
+    animation-name: anime;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.progress_line span {
+    height: 2px;
+    width: 30%;
+    background: #202020;
+    border-radius: 10px;
+    position: absolute;
+    transform: scaleX(0);
+    animation-name: anime;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anime {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.html span {
+    width: 30%;
+}
+
+.git span {
+    width: 5%;
+}
+
+.responsive span {
+    width: 20%;
+}
+
+.sublime span {
+    width: 25%;
+}
+
+.figma span {
+    width: 25%;
+}
+
+.vscode span {
+    width: 30%;
+}
+
+.progress_line span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -14px;
+    border: 5px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+}
+
+.progress_line span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -5px;
+    top: -25px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 500;
+    background: #000;
+    border-radius: 10%;
+    padding: 1px 1px;
+}
+
+.html span::after {
+    content: "30%";
+}
+
+.git span::after {
+    content: "5%";
+}
+
+.responsive span::after {
+    content: "20%";
+}
+
+.sublime span::after {
+    content: "25%";
+}
+
+.figma span::after {
+    content: "25%";
+}
+
+.vscode span::after {
+    content: "30%";
+}
+
+/*? Language */
+.languages_block {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.language_title {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 0.08em;
+    top: 0;
+    left: 0;
+}
+
+.lang_wrap {
+    margin-left: 25px;
+}
+
+.lang_wrap:last-child {
+    margin-top: 10px;
+}
+
+.lang_wrap:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 110px;
+    background: #ffd653;
+    position: absolute;
+    top: 0;
+    left: 15px;
+}
+
+.info_title {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    margin-bottom: 5px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.info_title::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #202020;
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+
+.info_item {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+}
+
+.item {
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+}
+
+/*? Interests */
+.interests_block {
+    position: relative;
+}
+
+.interest_title {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 0.08em;
+    top: 0;
+    left: 0;
+}
+
+.interest_wrap {
+    padding-top: 15px;
+}
+
+.interest_item {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    padding-left: 25px;
+}
+
+.interest_item::before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 65px;
+    background: #ffd653;
+    position: absolute;
+    top: 0;
+    left: 15px;
+}
+
+/*! Main */
+.summary_block,
+.education_block,
+.experience_block {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.summary_title,
+.education_title,
+.experience_title {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 0.08em;
+    top: 0;
+    left: 0;
+}
+
+.summary_item {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    padding-left: 25px;
+}
+
+.summary_item::before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 58px;
+    background: #ffd653;
+    position: absolute;
+    top: 0;
+    left: 15px;
+}
+
+/*? Education,Experience */
+.education_wrap,
+.experience_wrap {
+    margin-left: 25px;
+}
+
+.title {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    transform: translateZ("100px");
+}
+
+.text {
+    text-decoration: none;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    transform: translateZ(50px);
+    display: block;
+    color: #202020
+}
+
+.title::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #202020;
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+
+.education_wrap:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 210px;
+    background: #ffd653;
+    position: absolute;
+    top: 0;
+    left: 15px;
+}
+
+.subtitle {
+    font-size: 8px;
+    line-height: 140%;
+    margin: 5px 0;
+    transform: translateZ(80px);
+}
+
+.experience_wrap:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 65px;
+    background: #ffd653;
+    position: absolute;
+    top: 0;
+    left: 15px;
+}
