@@ -637,7 +637,8 @@ table {
     letter-spacing: 0.04em;
     transform: translateZ(50px);
     display: block;
-    color: #202020
+    color: #202020;
+    letter-spacing: 2px;
 }
 
 .title::before {
